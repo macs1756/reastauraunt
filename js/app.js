@@ -21,13 +21,14 @@ $(document).ready(()=>{
 
 	$(window).scroll(()=>{
 		if(window.scrollY > 50){
-			$("header").addClass("active");	
+			$(".header").addClass("active");	
 		}else{
-			$("header").removeClass("active");
+			$(".header").removeClass("active");
 		}
 	});
 
 	$(".header__burger").click(()=>{
+		$(".header").toggleClass("active");	
 		$(".header__burger").toggleClass("header__burger_close");
 		$(".header__burger-body").toggleClass("active");
 	})
