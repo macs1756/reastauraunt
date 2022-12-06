@@ -27,11 +27,14 @@ $(document).ready(()=>{
 		}
 	});
 
+	
+
 	$(".header__burger").click(()=>{
-		$(".header").toggleClass("active");	
+		$("body").toggleClass('active');
+		$(".header").addClass("active");
 		$(".header__burger").toggleClass("header__burger_close");
 		$(".header__burger-body").toggleClass("active");
-	})
+	});
 })
 
 
