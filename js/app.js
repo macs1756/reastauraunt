@@ -35,58 +35,7 @@ $(document).ready(()=>{
 		$(".header__burger").toggleClass("header__burger_close");
 		$(".header__burger-body").toggleClass("active");
 	});
-
-
-
-
-
-function x() {
 	
-		$('.main-dishes__leaf1')
-		.animate({
-			"top": "25%",
-			'right': "3%",
-			'opacity': 0.7,
-		}, 2500)
-
-		.animate({
-			"top": "45%",
-			'right': "-2%",
-			'opacity': 0.6,
-		}, 2500)
-
-		.animate({
-			"top": "75%",
-			'right': "2%",
-			'opacity': 0.45,
-
-		},2500)
-
-		.animate({
-			
-			'opacity': 0.25,
-
-		},350)
-
-
-		.animate({
-			'opacity': 0
-		},200)
-
-		.animate({
-			'top': "0%",
-			'right': "0%"
-		},100)
-
-		.animate({
-			'opacity': 1,
-		})
-}
-
-setInterval(x,1);
-
-
-
 });
 
 
@@ -96,20 +45,28 @@ setInterval(x,1);
 function x4(){
 	const awesomeFunction = () => {
 		return new Promise (resolve => {
+			 document.querySelector(".main-dishes__leaf1").classList.add("active");
 			 document.querySelector(".main-dishes__leaf2").classList.add("active");
+			 document.querySelector(".main-dishes__leaf3").classList.add("active");
+			 document.querySelector(".main-dishes__leaf4").classList.add("active");
 			 resolve();
 		})
 	}
 	
 	const printFunction = () => {
 	setTimeout(()=>{
+		document.querySelector(".main-dishes__leaf1").classList.remove("active");
 		document.querySelector(".main-dishes__leaf2").classList.remove("active");
+		document.querySelector(".main-dishes__leaf3").classList.remove("active");
+		document.querySelector(".main-dishes__leaf4").classList.remove("active");
 	 },4000);
 	
+
 	}
 	awesomeFunction().then(printFunction);
 }
 
 x4();
 setInterval(x4, 4100);
+
 
