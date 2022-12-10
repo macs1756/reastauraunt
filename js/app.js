@@ -70,3 +70,15 @@ x4();
 setInterval(x4, 4100);
 
 
+const swiper = new Swiper('.swiper', {
+	slidesPerView: 1.5,
+	spaceBetween: 115,
+	loop: true,
+	pagination: {
+		el: ".pg",
+		clickable: true
+	}
+
+ });
+ 
+

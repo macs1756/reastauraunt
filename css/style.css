@@ -1180,6 +1180,86 @@ footer {
   margin-left: 10%;
 }
 
+.review {
+  background: #F3F4F4;
+  padding-top: 115px;
+  padding-bottom: 400px;
+  position: relative;
+}
+
+.review__wr {
+  margin: 0 auto;
+  max-width: 1510px;
+  overflow: hidden;
+}
+
+.review__wr p {
+  max-width: 380px;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-bottom: 125px;
+  font-size: 16px;
+  line-height: 180%;
+  color: #5C6574;
+}
+
+.pg {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #101A24;
+  opacity: 0.2;
+  margin: 13px;
+  width: 7px;
+  height: 7px;
+}
+
+.swiper-pagination-bullet-active {
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #EA6D27;
+  opacity: 1;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+}
+
+.swiper-slide {
+  max-width: 640px;
+  background-color: #fff;
+}
+
+.swiper {
+  margin-left: 28%;
+}
+
+.review__frying-pan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-25%, 15%);
+      -ms-transform: translate(-25%, 15%);
+          transform: translate(-25%, 15%);
+  max-width: 750px;
+  width: 750px;
+}
+
 @media (min-width: 768px) {
   .header__burger-body {
     display: none;
@@ -1413,6 +1493,22 @@ footer {
 
   .chef__garlic-less {
     width: calc(60px + 130 * ((100vw - 320px) / 1510));
+  }
+
+  .review {
+    padding-top: calc(60px + 55 * ((100vw - 320px) / 1510));
+  }
+
+  .review {
+    padding-bottom: calc(200px + 200 * ((100vw - 320px) / 1510));
+  }
+
+  .pg {
+    margin-top: calc(60px + 40 * ((100vw - 320px) / 1510));
+  }
+
+  .review__frying-pan {
+    width: calc(200px + 550 * ((100vw - 320px) / 1510));
   }
 }
 
