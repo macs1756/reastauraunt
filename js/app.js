@@ -91,3 +91,18 @@ const swiper = new Swiper('.swiper', {
  });
  
 
+const formInput = document.getElementById('form-input');
+const formBtn = document.getElementById('form-btn');
+let reg = /^[a-zA-Z0-9_]+@[a-z0-9-]+\.[a-z]{2,6}$/;
+
+formBtn.addEventListener('click', ()=>{
+	if(reg.test(formInput.value)){
+		alert('sent to the base');
+	}else{
+		formInput.style.color = "red";
+	}
+});
+
+formInput.addEventListener('input', ()=>{
+	formInput.style.color = "#000";
+})
