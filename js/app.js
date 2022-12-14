@@ -71,14 +71,23 @@ setInterval(x4, 4100);
 
 
 const swiper = new Swiper('.swiper', {
-	slidesPerView: 1.5,
-	spaceBetween: 115,
+	
 	loop: true,
 	pagination: {
 		el: ".pg",
 		clickable: true
-	}
+	},
+	breakpoints: {
+		0: {
+			spaceBetween: 30,
+			slidesPerView: 1,
+		},
+		768: {
+			slidesPerView: 1.6,
+			spaceBetween: 115,
+		}
 
+	}
  });
  
 
