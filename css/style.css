@@ -1633,7 +1633,7 @@ footer {
   }
 
   footer {
-    padding-bottom: calc(50px + 180 * ((100vw - 320px) / 1510));
+    padding-bottom: calc(30px + 200 * ((100vw - 320px) / 1510));
   }
 
   .footer__main-hours {
