@@ -513,7 +513,154 @@ header {
 }
 
 footer {
-  height: 200vh;
+  padding-bottom: 230px;
+}
+
+.footer__first {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 44% 18% 18% 20%;
+  grid-template-columns: 44% 18% 18% 20%;
+}
+
+.footer__main img {
+  max-width: 200px;
+  min-height: 55px;
+  margin-bottom: 35px;
+}
+
+.footer__main p {
+  margin-bottom: 20px;
+  color: #5C6574;
+  line-height: 180%;
+  font-size: 16px;
+  padding-right: 3%;
+}
+
+.footer__main h6 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #101A24;
+  font-size: 12px;
+}
+
+.footer__navigation,
+.footer__dishes,
+.footer__follow,
+.footer__main {
+  padding-right: 15px;
+}
+
+.footer__follow {
+  padding-bottom: 20px;
+}
+
+.footer__follow p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #101A24;
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+
+.footer__follow ul {
+  padding-top: 17px;
+}
+
+.footer__follow ul li:not(:last-child) {
+  margin-right: 14px;
+}
+
+.footer__follow ul li {
+  border: 1px solid #101A24;
+  border-radius: 50%;
+  padding: 7px;
+  width: 38px;
+  height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 38px;
+}
+
+.footer__navigation li,
+.footer__dishes li {
+  padding: 10px 0;
+}
+
+.footer__navigation li:nth-child(1),
+.footer__dishes li:nth-child(1) {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #101A24;
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+
+.footer__main-hours {
+  padding-top: 18px;
+  padding-bottom: 45px;
+}
+
+.footer__main-hours li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.footer__main-hours li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+
+.footer__main-hours p {
+  line-height: 120%;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 29px;
+  color: #5C6574;
+  margin-bottom: 0;
+}
+
+.footer_bd {
+  height: 1px;
+  display: block;
+  opacity: 0.1;
+  background-color: #101A24;
+}
+
+.footer__second {
+  padding-top: 35px;
+  color: #5C6574;
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.footer__second .footer__autor {
+  padding-right: 15px;
+}
+
+.footer__second .footer__autor a {
+  font-weight: 700;
+}
+
+.footer__second div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.footer__second-politic a:not(:last-child) {
+  margin-right: 15px;
 }
 
 .no-webp .subfooter__wr {
@@ -526,7 +673,6 @@ footer {
   max-height: 410px;
   border-radius: 40px;
   background-size: contain;
-  margin: 0px 15px;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -1486,6 +1632,18 @@ footer {
     font-size: calc(14px + 2 * ((100vw - 320px) / 1510));
   }
 
+  footer {
+    padding-bottom: calc(50px + 180 * ((100vw - 320px) / 1510));
+  }
+
+  .footer__main-hours {
+    padding-bottom: calc(20px + 25 * ((100vw - 320px) / 1510));
+  }
+
+  .footer__main-hours p {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 1510));
+  }
+
   .subfooter__wr {
     padding-top: calc(60px + 40 * ((100vw - 320px) / 1510));
   }
@@ -1711,6 +1869,19 @@ footer {
   .content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .footer__first {
+    -ms-grid-columns: 60% 20% 20%;
+    grid-template-columns: 60% 20% 20%;
+  }
+
+  .footer__main h6 {
+    padding-top: 10px;
+  }
+
+  .footer__follow p {
+    padding-bottom: 0;
   }
 
   .subfooter__input button {
@@ -2000,6 +2171,93 @@ footer {
     font-size: 30px;
   }
 
+  footer {
+    -webkit-transform: translate(0, -100px);
+        -ms-transform: translate(0, -100px);
+            transform: translate(0, -100px);
+  }
+
+  .footer__first {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__main img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .footer__main p {
+    padding-right: 0%;
+    text-align: center;
+  }
+
+  .footer__main h6 {
+    display: none;
+  }
+
+  .footer__navigation,
+  .footer__dishes,
+  .footer__follow,
+  .footer__main {
+    padding-right: 0;
+  }
+
+  .footer__dishes {
+    display: none;
+  }
+
+  .footer__follow p {
+    display: none;
+  }
+
+  .footer__follow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__navigation li,
+  .footer__dishes li {
+    text-align: center;
+  }
+
+  .footer__navigation li:nth-child(1),
+  .footer__dishes li:nth-child(1) {
+    display: none;
+  }
+
+  .footer__main-hours li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .footer__main-hours li {
+    margin: 0px 10px;
+  }
+
+  .footer__second .footer__autor {
+    padding-right: 0;
+  }
+
+  .footer__second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__second-politic {
+    margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .subfooter__input {
     padding: 8px 12px;
     border-radius: 15px;
@@ -2046,6 +2304,30 @@ footer {
     display: none;
   }
 
+  .footer__main-hours {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__main-hours li {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .footer__main-hours {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__second {
+    padding-top: 15px;
+  }
+
   .subfooter__wr {
     padding-left: 10px;
     padding-right: 10px;
@@ -2054,6 +2336,11 @@ footer {
   .subfooter__wr {
     margin: 0;
     border-radius: 0;
+  }
+
+  .subfooter {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .subfooter__input {
@@ -2184,6 +2471,10 @@ footer {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     color: rgba(16, 26, 36, 0.7254901961);
+  }
+
+  .footer__second a:hover {
+    text-decoration: underline;
   }
 
   .subfooter__input button:hover {
